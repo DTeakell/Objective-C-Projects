@@ -4,7 +4,7 @@
 //
 //  Created by Dillon Teakell on 4/28/25.
 //
-// Print 'Hello, World!' to the console
+//  Print 'Hello, World!' to the console
 
 #import <Foundation/Foundation.h>
 
