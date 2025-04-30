@@ -17,7 +17,13 @@ int main(int argc, const char * argv[]) {
                                                          type:@"iOS Developer"
                                                           age:23
                                             yearsOfExperience:0];
+    NSLog(@"Developer Allocated\n");
     
     [newDeveloper printSummary];
+    [newDeveloper release];
+    
+    NSLog(@"Developer Deallocated\n");
+    
     [pool drain];
+    return 0;
 }
