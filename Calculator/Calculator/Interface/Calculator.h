@@ -4,9 +4,26 @@
 //
 //  Created by Dillon Teakell on 4/30/25.
 //
+//
+//  Calculator Interface
+//
+//
+@interface Calculator : NSObject {
+    double accumulator;
+}
 
-#ifndef Calculator_h
-#define Calculator_h
+// Accumulator Methods
+- (void) setAccumulator: (double) value;
+- (void) clear;
+- (double) accumulator;
 
+// Artithmitic Methods
+- (void) add: (double) value;
+- (void) subtract: (double) value;
+- (void) multiply: (double) value;
+- (void) divide: (double) value;
 
-#endif /* Calculator_h */
+// Print Methods
+- (void) print;
+
+@end
