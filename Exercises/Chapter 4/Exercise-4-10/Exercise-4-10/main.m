@@ -6,11 +6,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Calculator.h"
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    
+    Calculator *calculator = [[Calculator alloc] init];
+    
+    [calculator setAccumulator:200];
+    [calculator memoryStore];
+    [calculator print];
+    
+    [calculator release];
+    [pool drain];
     return 0;
 }

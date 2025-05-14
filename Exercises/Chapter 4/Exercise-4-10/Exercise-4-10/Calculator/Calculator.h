@@ -10,6 +10,7 @@
 //
 @interface Calculator : NSObject {
     double accumulator;
+    double memory;
 }
 
 // Accumulator Methods
@@ -27,6 +28,13 @@
 - (double) reciprocal;
 - (double) square;
 
+
+// Memory Methods
+- (double) memoryClear;
+- (double) memoryStore;
+- (double) memoryRecall;
+- (double) memoryAdd;
+- (double) memorySubtract;
 
 // Print Methods
 - (void) print;

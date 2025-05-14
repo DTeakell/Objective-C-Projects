@@ -79,9 +79,38 @@
     return accumulator *= accumulator;
 }
 
+
+// Memory Methods
+// Clear memory
+- (double) memoryClear {
+    return memory = 0;
+}
+
+// Stores the accumulator into memory
+- (double) memoryStore {
+    memory = accumulator;
+    return memory;
+}
+
+// Returns memory
+- (double) memoryRecall {
+    return memory;
+}
+
+// Adds the accumulator to memory
+- (double) memoryAdd {
+    return memory += accumulator;
+}
+
+// Subtracts the accumulator from memory
+- (double) memorySubtract {
+    return memory -= accumulator;
+}
+
 // Print Method
 - (void) print {
     NSLog(@"The current accumulator value is: %f\n", [self accumulator]);
+    NSLog(@"The value in memory is: %f\n", memory);
 }
 
 @end
